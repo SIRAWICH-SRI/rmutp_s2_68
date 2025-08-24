@@ -2,11 +2,12 @@
   "dependencies": {
     "@hono/node-server": "^1.18.2",
     "@prisma/client": "^6.13.0",
-    "express": "^5.1.0",
     "hono": "^4.9.2",
     "prisma": "^6.13.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
