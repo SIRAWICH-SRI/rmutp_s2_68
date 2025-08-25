@@ -1,6 +1,9 @@
-import {serve} from "@hono/node-server";
-import app  from "./app";
+import { serve } from "@hono/node-server";
+import app from "./app.ts";
 
-serve(app, (info)=>{
-    console.log(`Running server on port ${info.port}`);
+serve({
+  fetch: app.fetch,
+  port: 3000,
 });
+
+console.log("✅ Server running at http://localhost:3000");
