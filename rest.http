@@ -1,10 +1,10 @@
-### Get all
+### Profile - Get all
 GET http://localhost:3000/profile
 
-### Get by id (ใส่ uuid จริงจากฐาน)
-GET http://localhost:3000/profile/1d6b1f4a-9e2f-4b2a-8a9a-3a3b8b6f2b9c
+### Profile - Get by id
+GET http://localhost:3000/profile/xxxx-xxxx-xxxx
 
-### Create (ต้องไม่ซ้ำ username/mobile/cardId)
+### Profile - Create
 POST http://localhost:3000/profile
 Content-Type: application/json
 
@@ -13,4 +13,13 @@ Content-Type: application/json
   "password": "12345678",
   "mobile": "0841234567",
   "cardId": "1122334455667"
+}
+
+### Auth - Login (bcrypt compare)
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "12345678"
 }
