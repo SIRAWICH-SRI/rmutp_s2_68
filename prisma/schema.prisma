@@ -14,7 +14,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 model User {
-  id        String  @id     @default(uuid())
+  id        Int    @id @default(autoincrement())
   username  String  @unique
   password  String
   mobile    String  @unique @db.VarChar(10)
