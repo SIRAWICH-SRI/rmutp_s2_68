@@ -2,7 +2,7 @@
 GET http://localhost:3000/profile
 
 ### Profile - Get by id
-GET http://localhost:3000/profile/xxxx-xxxx-xxxx
+GET http://localhost:3000/profile/1
 
 ### Profile - Create
 POST http://localhost:3000/profile
